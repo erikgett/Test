@@ -1,6 +1,7 @@
 ﻿using MaterialDesignThemes.Wpf;
 using System.Windows;
 using System.Windows.Media;
+using System.Windows.Shell;
 
 namespace Test
 {
@@ -22,12 +23,12 @@ namespace Test
             this.Style = materialDesignWindowStyle;
         }
 
-        public void Purple_Click(object sender, RoutedEventArgs e)
+        public void DarkThemeClick(object sender, RoutedEventArgs e)
         {
             SetPrimaryColor(Colors.MediumPurple, BaseTheme.Dark);
         }
 
-        public void Green_Click(object sender, RoutedEventArgs e)
+        public void LightThemeClick(object sender, RoutedEventArgs e)
         {
             SetPrimaryColor(Colors.MediumPurple, BaseTheme.Light);
         }

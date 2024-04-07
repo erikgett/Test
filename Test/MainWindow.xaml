@@ -9,6 +9,13 @@
         Title="MainWindow" Height="450" Width="800">
 
     <GroupBox Header="Change Theme Example">
+        <GroupBox.Resources>
+            <ResourceDictionary>
+                <ResourceDictionary.MergedDictionaries>
+                    <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Defaults.xaml" />
+                </ResourceDictionary.MergedDictionaries>
+            </ResourceDictionary>
+        </GroupBox.Resources>
         <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition />
@@ -17,12 +24,12 @@
 
             <Button Content="Purple"
                     Background="MediumPurple"
-                    Margin="5" Click="Purple_Click"/>
+                    Margin="5" Click="DarkThemeClick"/>
 
             <Button Content="Green" 
-                    Background="LightGreen"
+                    Background="MediumPurple"
                     Margin="5"
-                    Grid.Column="1" Click="Green_Click" />
+                    Grid.Column="1" Click="LightThemeClick" />
         </Grid>
     </GroupBox>
 </local:StranaBaseWindow>
